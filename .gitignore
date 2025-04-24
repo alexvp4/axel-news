@@ -1,0 +1,12 @@
+.env*
+*.env
+node_modules/
+**/node_modules/
+npm-debug.log*
+dist/
+build/
+.vercel/
+.eslintcache
+.cache/
+client/src/assets
+mailList.js
