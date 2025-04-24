@@ -1,13 +1,14 @@
 const nodemailer = require("nodemailer");
+require("dotenv").config();
 
 // Configurações de transporte (SMTP)
 const transporter = nodemailer.createTransport({
-  host: "smtpout.secureserver.net",
-  port: 465,
+  host: process.env.HOST,
+  port: process.env.PORT,
   secure: true,
   auth: {
-    user: "contato@axeltech.com.br",
-    pass: "dfc074456",
+    user: process.env.USER,
+    pass: process.env.USER_PASS,
   },
 });
 
