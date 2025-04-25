@@ -6,9 +6,9 @@ const newsTemplate = getTemplate("newsletter.html");
 await sendMail(
   [
     "alex@axeltech.com.br",
-    "cleomar@axeltech.com.br",
-    "cleomar-ilha@auroracoop.com.br",
-    "alex-pereira@auroracoop.com.br",
+    // "cleomar@axeltech.com.br",
+    // "cleomar-ilha@auroracoop.com.br",
+    // "alex-pereira@auroracoop.com.br",
   ],
   "Axel News (teste)",
   newsTemplate
