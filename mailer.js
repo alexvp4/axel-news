@@ -17,9 +17,7 @@ async function sendMail(destinatarios, assunto, mensagemHTML) {
   try {
     const info = await transporter.sendMail({
       from: '"Axel News" <contato@axeltech.com.br>',
-      // coloca um destinatário genérico no TO ou use o seu próprio
       to: '"Lista de Distribuição" <contato@axeltech.com.br>',
-      // aqui você passa o array ou string de e-mails que quer ocultar
       bcc: destinatarios,
       subject: assunto,
       html: mensagemHTML,
